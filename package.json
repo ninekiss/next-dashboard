@@ -1,19 +1,51 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
     "build": "next build",
-    "start": "next start"
+    "dev": "next dev",
+    "prettier": "prettier --write --ignore-unknown .",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "start": "next start",
+    "pnpm:devPreinstall": "node ./set-node-linker.js"
   },
   "dependencies": {
-    "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@heroicons/react": "^2.0.18",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/node": "20.5.7",
+    "@vercel/postgres": "^0.5.0",
+    "autoprefixer": "10.4.15",
+    "bcrypt": "^5.1.1",
+    "clsx": "^2.0.0",
+    "crypto-js": "^4.2.0",
+    "next": "^14.0.2",
+    "next-auth": "5.0.0-beta.16",
+    "postcss": "8.4.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.33.3",
+    "sqlite3": "^5.1.6",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.2.2",
+    "use-debounce": "^10.0.0",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
-    "@types/node": "20.8.10",
-    "@types/react": "18.2.33",
+    "@types/bcrypt": "^5.0.1",
+    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.14",
-    "typescript": "^5.2.2"
+    "@vercel/style-guide": "^5.0.1",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
+    "eslint-config-prettier": "9.0.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.4"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "optionalDependencies": {
+    "gradient-string": "^2.0.2"
   }
 }
